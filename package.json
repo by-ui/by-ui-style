@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "",
   "main": "index.js",
+
   "scripts": {
     "build": "npm run build-clean && npm run copy && npm run build-scss && npm run build-scss-minify && npm run build-autoprefix",
     "build-clean": "rimraf css",
@@ -18,7 +19,6 @@
   "devDependencies": {
     "autoprefixer": "^7.1.1",
     "copyfiles": "^1.2.0",
-    "eslint-config-o2team": "^0.1.6",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.0",
     "rimraf": "^2.6.1"
