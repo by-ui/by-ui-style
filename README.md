@@ -1,3 +1,3 @@
-# by-ui-style 123456
+# by-ui-style
 
 BY-UI 组件样式
