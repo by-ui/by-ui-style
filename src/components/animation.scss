@@ -2,9 +2,10 @@
  * Animations
  */
 
-@mixin vue-anim($class-name, $keyframe-name) {
+@mixin vue-anim($class-name, $keyframe-name, $duration) {
   .#{$class-name}-enter-active {
     animation: #{$keyframe-name}In .3s ease-in-out both;
+    animation-duration: #{$duration};
   }
   .#{$class-name}-leave-active {
     animation: #{$keyframe-name}Out .3s ease-in-out both;
@@ -99,11 +100,11 @@
   }
 }
 
-@include vue-anim(slide-up, slideUp);
-@include vue-anim(move-up, moveUp);
-@include vue-anim(fade, fade);
-@include vue-anim(notification-fade, notificationFade);
-
+@include vue-anim(slide-up, slideUp, 0.3s);
+@include vue-anim(move-up, moveUp, 0.3s);
+@include vue-anim(fade, fade, 0.8s);
+@include vue-anim(notification-fade, notificationFade, 0.3s);
+@include vue-anim(inner-fade, fade, 0.3s);
 
 /**
  * Element Animation
