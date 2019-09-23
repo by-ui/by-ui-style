@@ -102,7 +102,8 @@
 
 @include vue-anim(slide-up, slideUp, 0.3s);
 @include vue-anim(move-up, moveUp, 0.3s);
-@include vue-anim(fade, fade, 0.8s);
+@include vue-anim(fade-page, fade, 1.8s);
+@include vue-anim(fade, fade, 0.3s);
 @include vue-anim(notification-fade, notificationFade, 0.3s);
 @include vue-anim(inner-fade, fade, 0.3s);
 
