@@ -19,6 +19,7 @@
   white-space: nowrap;
   user-select: none;
   cursor: pointer;
+  line-height: 1;
 
   + .by-radio {
     margin-left: 16px;
@@ -185,4 +186,5 @@
   font-size: 0;
   line-height: 1;
   border-collapse: separate;
+  vertical-align: middle;
 }

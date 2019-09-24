@@ -7,7 +7,7 @@
   position: relative;
   display: inline-block;
   font-size: 0;
-  line-height: 1.5;
+//   line-height: 1.5;
   white-space: nowrap;
   user-select: none;
   cursor: pointer;
@@ -58,6 +58,7 @@
     vertical-align: middle;
     cursor: pointer;
     outline: none;
+    line-height: 1;
   }
   &__inner {
     position: relative;
@@ -101,5 +102,6 @@
     font-size: $checkbox-font-size;
     padding-left: 8px;
     vertical-align: middle;
+    line-height: 1;
   }
 }

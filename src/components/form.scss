@@ -58,15 +58,20 @@
     vertical-align: middle;
     float: left;
     font-size: $font-size-base;
-    color: $color-normal;
-    line-height: 1;
-    padding: 10px 12px 10px 0;
+    color: #606266;
+    line-height: 40px;
+    padding: 0 12px 0 0;
+    box-sizing: border-box;
   }
   &__content {
     position: relative;
     font-size: $font-size-base;
-    line-height: 34px;
+    line-height: 40px;
     @include clearfix;
+    &:before {
+        display: table;
+        content: ""
+    }
   }
   &__error-tip {
     position: absolute;
