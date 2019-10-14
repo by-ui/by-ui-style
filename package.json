@@ -1,12 +1,11 @@
 {
   "name": "by-ui-style",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
 
   "scripts": {
-    "build": "npm run build-clean && npm run copy && npm run build-scss && npm run build-scss-minify && npm run build-autoprefix",
-    "build-clean": "rimraf css",
+    "build": "npm run copy && npm run build-scss && npm run build-scss-minify && npm run build-autoprefix",
     "build-scss": "node-sass --output-style expanded --source-map true src/index.scss css/by.css",
     "build-scss-minify": "node-sass --output-style compressed --source-map true src/index.scss css/by.min.css",
     "build-autoprefix": "postcss --use autoprefixer -c postcss.json css/*.css -d css/",
